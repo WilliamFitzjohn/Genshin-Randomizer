@@ -1,0 +1,53 @@
+Pyro Slime
+Cyro Slime
+Hydro Slime
+Electro Slime
+Geo Slime
+Dendro Slime
+Anemo Slime
+Regular Hilichurl
+Pyro Hilichurl
+Cyro Hilichurl
+Electro Hilichurl
+Samachurl
+Treasure hunter
+Any Nobushi
+Thunderhelm Lawachurl
+Frostarm Lawachurl
+Crackling Axe Mitachurl
+Ice Shieldwall Mitachurl
+Blazing Axe Mitachurl
+Rock Shieldwall Mitachurl
+Wooden Shield Mitachurl
+Stonehide Lawachurl
+Pyro Abyss Mage
+Cryo Abyss Mage
+Hydro Abyss Mage
+Electro Abyss Mage
+Nobushi
+Fatui Agent
+Fatui Cyro
+Fatui Hydro
+Fatui Electro
+Fatui Pyro
+Fatui AnemoBoxer
+Fatui Geo
+Fatui Electro Cicin Mage
+Fatui Cryo Cicin Mage
+Mirror Maiden
+Ruin Guard
+Ruin Hunter (Flying One)
+Ruin Grader (HUGE)
+Ruin Scout (Jellyfish Guy)
+Ruin Defender (The Spider)
+Ruin Destroyer (Snake guy that digs)
+Ruin Crusier (Guy with 3 little guys)
+Cryo Whopperflower
+Pyro Whopperflower
+Electro Whopperflower
+Geovishap Hatchling
+Geovishap
+Electro Bathysmal Vishap
+Cyro Bathysmal Vishap
+Boar King
+Mutant Electro Slime
