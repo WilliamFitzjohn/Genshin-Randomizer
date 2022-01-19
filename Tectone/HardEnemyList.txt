@@ -10,7 +10,8 @@ Pyro Abyss Mage
 Cryo Abyss Mage
 Hydro Abyss Mage
 Electro Abyss Mage
-Nobushi
+Pyro Samurai
+Electro Samurai
 Fatui Agent
 Fatui Cyro
 Fatui Hydro
@@ -23,7 +24,6 @@ Fatui Cryo Cicin Mage
 Mirror Maiden
 Ruin Guard
 Ruin Hunter (Flying One)
-Ruin Grader (HUGE)
 Ruin Scout (Jellyfish Guy)
 Ruin Defender (The Spider)
 Ruin Destroyer (Snake guy that digs)
@@ -37,3 +37,4 @@ Electro Bathysmal Vishap
 Cyro Bathysmal Vishap
 Boar King
 Mutant Electro Slime
+Eye of the Storm

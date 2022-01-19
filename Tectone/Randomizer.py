@@ -1,4 +1,3 @@
-from pickletools import pyfrozenset
 import random
 enemyListOne = []
 enemyListTwo = []
@@ -10,58 +9,43 @@ enemyNum = 0
 print("Welcome to the scuffed remake of Tectone's Randomizer!") #Intro to the program
 print("Now including Inazuma and Enkanomiya!")
 print("")
+print("RULES:")
+print("#1 Both players present in same game (2 party members each)")
+print("#2 Only fast travel is to statues of seven, MUST be at a statue to go to another.")
+print("#3 Players END at Spiral Abyss (First one to touch the ground.")
+print("#4 Items MUST be picked up.")
+print("#5 No Food/Items.")
+print("#6 No team swaps.")
+print("#7 Mona is banned.")
+print("#8 Players may ban 1 unit from others roster.")
 print("")
 
-enemyInput = input("Please type '1' for all enemies to be in selection pool, or '2' for only harder enemies.")
-check = int(enemyInput)
-while check > 2 or check < 1:
-    enemyInput = input("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ") #Player input for coin flip
-    check = int(enemyInput)
-print("")
-print("")
-
-if(check == 1):
-    f = open("AllEnemyList.txt", "r") #opening the enemy list
-    enemies = f.read().splitlines()
-    f.close()
-    enemyNum = 52
-else:
-    f = open("HardEnemyList.txt", "r") #opening the enemy list
-    enemies = f.read().splitlines()
-    f.close()
-    enemyNum = 38
-
-if(check == 1):
-    f = open("AllEnemyList.txt", "r") #opening the enemy list
-    enemies = f.read().splitlines()
-    f.close()
-    enemyNum = 52
-else:
-    f = open("HardEnemyList.txt", "r") #opening the enemy list
-    enemies = f.read().splitlines()
-    f.close()
-    enemyNum = 38
-
+f = open("HardEnemyList.txt", "r") #opening the enemy list
+enemies = f.read().splitlines()
+f.close()
+enemyNum = 39
 f = open("Items.txt", "r") #opening the item list
 items = f.read().splitlines()
 f.close()
 
-print("")
-print("")
-coin = input("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ")
+print("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ")
+coin = input(" ")
 check = int(coin)
 while check > 2 or check < 1:
-    coin = input("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ") #Player input for coin flip
+    print("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ")
+    coin = input(" ") #Player input for coin flip
     check = int(coin)
 print("")
 print("")
 
 coinflip = random.randint(1,2)
 if(coinflip == check):
-    flower = input("Player 1 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower: ")
+    print("Player 1 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower:  ")
+    flower = input(" ")
     checkF = int(flower)
     while checkF > 2 or checkF < 1:
-        flower = input("Player 1 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower: ")
+        print("Player 1 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower:  ")
+        flower = input(" ")
         checkF = int(flower)
     if(checkF == 1):
         flowerOne = "Pyro Flower"
@@ -70,10 +54,12 @@ if(coinflip == check):
         flowerTwo = "Pyro Flower"
         flowerOne = "Cyro Flower"
 else:
-    flower = input("Player 2 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower: ")
+    print("Player 2 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower: ")
+    flower = input(" ")
     checkF = int(flower)
     while checkF > 2 or checkF < 1:
-        flower = input("Player 2 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower: ")
+        print("Player 2 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower: ")
+        flower = input(" ")
         checkF = int(flower)
     if(checkF == 1):
         flowerTwo = "Pyro Flower"
@@ -107,24 +93,24 @@ for i in range(0,5): #selecting enemies for player one
         pickedNums.append(n)
 
 for i in range(0,5): #selecting items for player one
-    n = random.randint(0,71)
+    n = random.randint(0,60)
     if(n not in pickedNumsI):
         itemListOne.append(items[n])
         pickedNumsI.append(n)
     else:
         while(n in pickedNumsI): #make sure there are no repeats in each player's pools
-            n = random.randint(0,71)
+            n = random.randint(0,60)
         itemListOne.append(items[n])
         pickedNumsI.append(n)
 
 for i in range(0,5): #selecting items for player one
-    n = random.randint(0,71)
+    n = random.randint(0,60)
     if(n not in pickedNumsI):
         itemListTwo.append(items[n])
         pickedNumsI.append(n)
     else:
         while(n in pickedNumsI): #make sure there are no repeats in each player's pools
-            n = random.randint(0,71)
+            n = random.randint(0,60)
         itemListTwo.append(items[n])
         pickedNumsI.append(n)
 
