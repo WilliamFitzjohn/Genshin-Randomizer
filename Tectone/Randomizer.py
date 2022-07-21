@@ -92,7 +92,7 @@ for i in range(0,5): #selecting enemies for player one
         enemyListTwo.append(enemies[n])
         pickedNums.append(n)
 
-for i in range(0,5): #selecting items for player one
+for _ in range(0,5): #selecting items for player one
     n = random.randint(0,60)
     if(n not in pickedNumsI):
         itemListOne.append(items[n])
@@ -103,7 +103,7 @@ for i in range(0,5): #selecting items for player one
         itemListOne.append(items[n])
         pickedNumsI.append(n)
 
-for i in range(0,5): #selecting items for player one
+for _ in range(0,5): #selecting items for player one
     n = random.randint(0,60)
     if(n not in pickedNumsI):
         itemListTwo.append(items[n])
@@ -116,8 +116,7 @@ for i in range(0,5): #selecting items for player one
 
 print("Player 1 Starts at:", flowerOne)
 print("Player 1 Enemies:", enemyListOne)
-print("Player 1 Items:", itemListOne)
-print(" ")
+print("Player 1 Items:", itemListOne, "\n")
 print("Player 2 Starts at:", flowerTwo)
 print("Player 2 Enemies:", enemyListTwo)
 print("Player 2 Items:", itemListTwo)
