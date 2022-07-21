@@ -7,8 +7,7 @@ pickedNums = []
 pickedNumsI = []
 enemyNum = 0
 print("Welcome to the scuffed remake of Tectone's Randomizer!") #Intro to the program
-print("Now including Inazuma and Enkanomiya!")
-print("")
+print("Now including Inazuma and Enkanomiya!\n")
 print("RULES:")
 print("#1 Both players present in same game (2 party members each)")
 print("#2 Only fast travel is to statues of seven, MUST be at a statue to go to another.")
@@ -20,13 +19,15 @@ print("#7 Mona is banned.")
 print("#8 Players may ban 1 unit from others roster.")
 print("")
 
-f = open("HardEnemyList.txt", "r") #opening the enemy list
-enemies = f.read().splitlines()
-f.close()
+#opening the enemy list
+with open("HardEnemyList.txt", "r") as f:
+    enemies = f.read().splitlines()
 enemyNum = 39
-f = open("Items.txt", "r") #opening the item list
-items = f.read().splitlines()
-f.close()
+
+#Open the item list
+with open("Items.txt", "r") as f:
+    items = f.read().splitlines()
+
 
 print("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ")
 coin = input(" ")
@@ -35,11 +36,10 @@ while check > 2 or check < 1:
     print("Can player 1 either type '1' or '2' (1 for heads, 2 for tails): ")
     coin = input(" ") #Player input for coin flip
     check = int(coin)
-print("")
-print("")
+print("\n")
 
 coinflip = random.randint(1,2)
-if(coinflip == check):
+if coinflip == check:
     print("Player 1 wins the coin flip! Type '1' to choose Pyro flower or '2' for Cyro flower:  ")
     flower = input(" ")
     checkF = int(flower)
