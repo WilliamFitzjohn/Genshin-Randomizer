@@ -16,8 +16,7 @@ print("#4 Items MUST be picked up.")
 print("#5 No Food/Items.")
 print("#6 No team swaps.")
 print("#7 Mona is banned.")
-print("#8 Players may ban 1 unit from others roster.")
-print("")
+print("#8 Players may ban 1 unit from others roster.\n")
 
 #opening the enemy list
 with open("HardEnemyList.txt", "r") as f:
@@ -67,8 +66,7 @@ else:
     else:
         flowerOne = "Pyro Flower"
         flowerTwo = "Cyro Flower"
-print("")
-print("")
+print("\n")
 
 for i in range(0,5): #selecting enemies for player one
     n = random.randint(0,enemyNum) 
